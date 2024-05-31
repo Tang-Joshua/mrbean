@@ -81,7 +81,6 @@ import org.apache.derby.drda.NetworkServerControl;
 
 
 public class A_W extends Connect_ip {
-    String name = "Hello World";
     
     private static int getColumnIndexByName(JTable table, String columnName) {
         for (int i = 0; i < table.getColumnCount(); i++) {
