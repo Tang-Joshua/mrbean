@@ -317,13 +317,6 @@ public class C_WORK extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         Edit_User = new javax.swing.JFrame();
         jPanel2 = new javax.swing.JPanel();
-        newPanel1 = new v1_tm_projectmanagement.NewPanel();
-        username_edit = new javax.swing.JTextField();
-        password_edit = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        usertype_edit = new javax.swing.JComboBox<>();
         jButton4 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -337,11 +330,6 @@ public class C_WORK extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
         Edit_Company = new javax.swing.JFrame();
-        newPanel2 = new v1_tm_projectmanagement.NewPanel();
-        company_id = new javax.swing.JTextField();
-        company_name = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
@@ -457,51 +445,6 @@ public class C_WORK extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
-        newPanel1.setBackground(new java.awt.Color(230, 226, 226));
-
-        jLabel3.setText("Usertype");
-
-        jLabel4.setText("Username");
-
-        jLabel5.setText("Password");
-
-        usertype_edit.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "User", "Admin" }));
-
-        javax.swing.GroupLayout newPanel1Layout = new javax.swing.GroupLayout(newPanel1);
-        newPanel1.setLayout(newPanel1Layout);
-        newPanel1Layout.setHorizontalGroup(
-            newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, newPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(usertype_edit, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(21, 21, 21)
-                .addGroup(newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(username_edit, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(password_edit, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        newPanel1Layout.setVerticalGroup(
-            newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(newPanel1Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(newPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(username_edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(password_edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(usertype_edit, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
         jButton4.setText("Save");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -533,19 +476,17 @@ public class C_WORK extends javax.swing.JFrame {
                         .addComponent(jButton4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton8)
-                        .addGap(0, 18, Short.MAX_VALUE))
-                    .addComponent(jLabel6)
-                    .addComponent(newPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                        .addContainerGap(0, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel6)
+                        .addContainerGap())))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(newPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton4)
                     .addComponent(jButton8)
@@ -658,45 +599,6 @@ public class C_WORK extends javax.swing.JFrame {
         Edit_Company.setLocation(new java.awt.Point(290, 150));
         Edit_Company.setResizable(false);
 
-        newPanel2.setBackground(new java.awt.Color(234, 229, 229));
-
-        company_id.setEnabled(false);
-
-        jLabel9.setText("ID:");
-
-        jLabel10.setText("Company name:");
-
-        javax.swing.GroupLayout newPanel2Layout = new javax.swing.GroupLayout(newPanel2);
-        newPanel2.setLayout(newPanel2Layout);
-        newPanel2Layout.setHorizontalGroup(
-            newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(newPanel2Layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addGroup(newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9)
-                    .addComponent(company_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
-                .addGroup(newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(newPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel10)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(company_name))
-                .addGap(21, 21, 21))
-        );
-        newPanel2Layout.setVerticalGroup(
-            newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(newPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel10))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(newPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(company_id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(company_name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-
         jButton13.setText("Save");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -722,15 +624,10 @@ public class C_WORK extends javax.swing.JFrame {
                 .addComponent(jLabel11)
                 .addContainerGap(622, Short.MAX_VALUE))
             .addGroup(Edit_CompanyLayout.createSequentialGroup()
-                .addGroup(Edit_CompanyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Edit_CompanyLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton14))
-                    .addGroup(Edit_CompanyLayout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(newPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton14)
                 .addContainerGap())
         );
         Edit_CompanyLayout.setVerticalGroup(
@@ -738,9 +635,7 @@ public class C_WORK extends javax.swing.JFrame {
             .addGroup(Edit_CompanyLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(newPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addGroup(Edit_CompanyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton13)
                     .addComponent(jButton14))
@@ -1481,8 +1376,6 @@ public class C_WORK extends javax.swing.JFrame {
     private javax.swing.JFrame Add_new_user;
     private javax.swing.JFrame Edit_Company;
     private javax.swing.JFrame Edit_User;
-    private javax.swing.JTextField company_id;
-    private javax.swing.JTextField company_name;
     private javax.swing.JButton delete_btn_1;
     private javax.swing.JButton delete_btn_2;
     private javax.swing.JButton edit_btn_1;
@@ -1501,15 +1394,10 @@ public class C_WORK extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1523,11 +1411,6 @@ public class C_WORK extends javax.swing.JFrame {
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
-    private v1_tm_projectmanagement.NewPanel newPanel1;
-    private v1_tm_projectmanagement.NewPanel newPanel2;
-    private javax.swing.JTextField password_edit;
     private javax.swing.JLabel user_id;
-    private javax.swing.JTextField username_edit;
-    private javax.swing.JComboBox<String> usertype_edit;
     // End of variables declaration//GEN-END:variables
 }
