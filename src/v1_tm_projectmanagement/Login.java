@@ -76,25 +76,25 @@ public class Login extends Connect_ip {
     }
 
     public void open_ip(){
-//        String url_ip = "jdbc:derby://"+ip_add.getText()+":1527/"+location.getText();
-        String url_ip = "jdbc:derby://192.168.1.19:1527/"+location.getText();
+        String url_ip = "jdbc:derby://"+ip_add.getText()+":1527/"+location.getText();
+//        String url_ip = "jdbc:derby://192.168.1.19:1527/"+location.getText();
         url = url_ip;
         NetworkServerControl obj;
-//        try {
-//            obj = new NetworkServerControl(InetAddress.getByName(ip_add.getText()),1527);
-//            obj.start(null);
-//            obj.ping();
-//            url = url_ip;
-//            System.out.println("Connection success");
-////                JOptionPane.showMessageDialog(this, "Derby server started successfully!!!.", "Success", JOptionPane.INFORMATION_MESSAGE);
-//            // Additional code for server startup actions
-//            } catch (UnknownHostException ex) {
-//                System.out.println("Connection failed");
-//                System.out.println(url_ip);
-//                next_ip();
-//        }catch (Exception ex) {
-//            System.out.println("Connection failed 2"); next_ip();
-//        }
+        try {
+            obj = new NetworkServerControl(InetAddress.getByName(ip_add.getText()),1527);
+            obj.start(null);
+            obj.ping();
+            url = url_ip;
+            System.out.println("Connection success");
+//                JOptionPane.showMessageDialog(this, "Derby server started successfully!!!.", "Success", JOptionPane.INFORMATION_MESSAGE);
+            // Additional code for server startup actions
+            } catch (UnknownHostException ex) {
+                System.out.println("Connection failed");
+                System.out.println(url_ip);
+                next_ip();
+        }catch (Exception ex) {
+            System.out.println("Connection failed 2"); next_ip();
+        }
     }
     
     public void Timer_check(){
