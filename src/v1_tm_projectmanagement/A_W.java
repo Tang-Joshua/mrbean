@@ -88,7 +88,7 @@ public class A_W extends Connect_ip {
                 return i; // Return the index if column name matches
             }
         }
-        return -1; // Return -1 if column name is not found
+        return -1; // Return -1 if column name is not found haha
     }
     
     List<String[]> rows = new ArrayList<>();
