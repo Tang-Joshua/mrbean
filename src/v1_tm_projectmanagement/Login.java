@@ -57,6 +57,7 @@ public class Login extends Connect_ip {
     
     public Login() {
         initComponents();
+        // Check this out
 //        Image image = icon.getImage();
 //        setIconImage(image);
 //        JOptionPane.showMessageDialog(null, "Loading");
