@@ -4,7 +4,7 @@
  */
 package v1_tm_projectmanagement;
 
-
+// Testing 1
 import com.formdev.flatlaf.fonts.roboto.FlatRobotoFont;
 import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import java.awt.BorderLayout;
@@ -81,6 +81,7 @@ import org.apache.derby.drda.NetworkServerControl;
 
 
 public class A_W extends Connect_ip {
+    String name = "Hello World";
     
     private static int getColumnIndexByName(JTable table, String columnName) {
         for (int i = 0; i < table.getColumnCount(); i++) {
